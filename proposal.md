@@ -35,28 +35,33 @@ There are two datasets provided by this task. The first one is a large amount of
 
 The smaller dataset has 4000 registers of transactions that were classified as fraud, this dataset has only two attributes:
 
-   Transaction specific attributes:
+   **Transaction specific attributes:**
+   
       CO_SEQ_DISPENSACAO: Sequencial code for the requested transaction related to the pharmacy
       BL_FRAUD_TRANSACTION: Boolean indication if the transaction was fraudulent or not
 
 The larger dataset provided has aprox. 200.000.000 registers of transactions executed from 2013 to 2019 with 72 attributes of more than 2000 pharmacies registered in the program. The data has been anonimized in orther to remove sensible information. The provided dataset contains the following list of attributes that we can analyse:
  
-   Transaction specific attributes:
+   **Transaction specific attributes:**
+   
       DT_DISPENSACAO: Date of the requested transaction in the format "DD/MM/YYYY - HH:MM:SS"
       CO_SEQ_DISPENSACAO: Sequencial code for the requested transaction related to the pharmacy
       QT_DISPENSACAO: Quantity of medicine sold by the transaction
       VL_UNITARIO: Unitary value of the medicine sold
       VL_REFERENCIA_POPFARMA: Unitary value that goverment pays back for that medicine
 
-   Stablishment attributes:
+   **Stablishment attributes:**
+   
       CO_SEQ_ESTABELECIMENTO: Pharmacy stablishment code
 
-   ICD attributes ([International Statistical Classification of Diseases and Related Health Problemsa](https://www.cid10.com.br/)):
+   **ICD attributes ([International Statistical Classification of Diseases and Related Health Problemsa](https://www.cid10.com.br/)):**
+   
       NO_CID: Number of the ICD register
       CO_CID: Code of the related desease
       ST_REGISTRO_ATIVO_CID: Identifier if the ICD register is active
 
-   Pacient attributes:
+   **Pacient attributes:**
+   
       ST_VIVO: Boolean if the pacient is alive or not
       CO_PESSOA: Identification of the pacient 
       DT_NASCIMENTO: Day of Birth
@@ -64,7 +69,8 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
       CO_ANO_NASCIMENTO: Year of birth
       SG_SEXO_PACIENTE: Gender of patient on birth
 
-   Patient's geoinformation attributes:
+   **Patient's geoinformation attributes:**
+   
       CO_MUNICIPIO_IBGE_PAC: Code of the city
       NO_MUNICIPIO_PAC: Number of the city in Annual Commerce Research (ACR)
       CO_AGLOMERADO_URBANO_PAC: Code of the urban conglomerate in ACR
@@ -84,10 +90,12 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
       NU_LONGITUDE_MUN_PAC: Geolocation longitude of the city
       NO_REGIAO_SAUDE_PAC: Number of the health region in ACR
 
-   Pacient's goverment program participation
+   **Pacient's goverment program participation:**
+   
       ST_PARTICIPA_POPFARMA_PAC: Indication if the pacient benefits from Popular Pharmacy program
 
-   Medicine attributes:
+   **Medicine attributes:**
+   
       NO_PRODUTO: Number of the product
       CO_PRODUTO: Code of the product
       NU_CATMAT:
@@ -96,11 +104,13 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
       QT_USUAL: Usual quantity of the medicine
       CO_PRINCIPIO_ATIVO_MEDICAMENTO: Code of the active principle of the medicine
 
-   Producer attributes:
+   **Producer attributes:**
+   
       NO_FABRICANTE: Number of identification of the producer
       NU_REGISTRO_ANVISA: Number of the producer National Sanitary Surveillance Agency register
 
-  Stock control and price attributes:
+   **Stock control and price attributes:**
+   
       CO_GRUPO_FINANCIAMENTO:
       DS_GRUPO_FINANCIAMENTO:
       VL_PRECO_SUBSIDIADO: Price specified by the government
@@ -108,7 +118,8 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
       QT_SOLICITADA: Requested ammount
       QT_ESTORNADA: Reversed ammount
 
-  Popular Pharmacy Program control attributes:
+   **Popular Pharmacy Program control attributes:**
+   
       NU_LINHA_CUIDADO:
       DS_PROGRAMA_SAUDE:
       SG_PROGRAMA_SAUDE:
@@ -117,8 +128,9 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
       ST_PART_FARMACIA_POPULAR_EST:
       QT_POPULACA_PORTARIA_1555_2013:
 
-   Additional Pharmacy geolocation attributes:
+   **Additional Pharmacy geolocation attributes:**
    (Same as pacients' attributes)
+   
       CO_AGLOMERADO_URBANO_EST:
       NO_AGLOMERADO_URBANO_EST:
       CO_MACRORREGIONAL_SAUDE_EST:
@@ -136,7 +148,7 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
       NU_LONGITUDE_MUN_EST:
       NO_REGIAO_SAUDE_EST:
 
-The dataset was provided in partnership between the [Ministry of Health](http://www.saude.gov.br/) and the [Medicine Faculty Foundation](http://www.ffm.br/) in terms of the [agreement 857860](https://drive.google.com/file/d/1s-n-j_TMU8lIXExPGMlR85X6WLIkOAtf/view?usp=sharing).
+The dataset was provided in partnership between the [Ministry of Health](http://www.saude.gov.br/) and the [Medicine Faculty Foundation](http://www.ffm.br/) in terms of the [agreement 857860](https://drive.google.com/file/d/1s-n-j_TMU8lIXExPGMlR85X6WLIkOAtf/view?usp=sharing) published in the Official Diary of the Union.
 
 ### Solution Statement
 <!-- _(approx. 1 paragraph)_
@@ -171,10 +183,19 @@ In this final section, summarize a theoretical workflow for approaching a soluti
   * Train the Clustering models on the given data as-is to gauge the performance.
   * Fine tune the model's hyperparameters.
   * Perform training.
+  * Perform individual benchmarks for each model.
   * Perform Comparative analysis between models.
 
 ### Prospects
 
+
+## References
+
+1 - DOMINGUES, RÉMI. Machine Learning for Unsupervised Fraud Detection, 2015. Available in http://www.diva-portal.org/smash/get/diva2:897808/FULLTEXT01.pdf.
+
+2 - PIERRE, RAFAEL. Detecting Financial Fraud Using Machine Learning, 2018. Available in https://towardsdatascience.com/detecting-financial-fraud-using-machine-learning-three-ways-of-winning-the-war-against-imbalanced-a03f8815cce9
+
+3 - FREI, LUKAS. Detecting Credit Card Fraud Using Machine Learning, 2019. Available in https://towardsdatascience.com/detecting-credit-card-fraud-using-machine-learning-a3d83423d3b8
 
 -----------
 
