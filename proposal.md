@@ -1,7 +1,5 @@
 # Machine Learning Engineer Nanodegree
-
-## Capstone Proposal
-## 
+## Fraud detection in medicine distribution
 Arthur Jahn Sturzbecher
 August 17, 2019
 
