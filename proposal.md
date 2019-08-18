@@ -1,5 +1,5 @@
 # Machine Learning Engineer Nanodegree
-## Fraud detection in medicine distribution
+## Fraud detection in the Popular Pharmacy Program
 Arthur Jahn Sturzbecher
 August 17, 2019
 
@@ -38,6 +38,7 @@ The smaller dataset has 4000 registers of transactions that were classified as f
       CO_SEQ_DISPENSACAO: Sequencial code for the requested transaction related to the pharmacy
       BL_FRAUD_TRANSACTION: Boolean indication if the transaction was fraudulent or not
 
+
 The larger dataset provided has aprox. 200.000.000 registers of transactions executed from 2013 to 2019 with 72 attributes of more than 2000 pharmacies registered in the program. The data has been anonimized in orther to remove sensible information. The provided dataset contains the following list of attributes that we can analyse:
  
    **Transaction specific attributes:**
@@ -52,7 +53,7 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
    
       CO_SEQ_ESTABELECIMENTO: Pharmacy stablishment code
 
-   **ICD attributes ([International Statistical Classification of Diseases and Related Health Problemsa](https://www.cid10.com.br/)):**
+   **ICD attributes ([International Statistical Classification of Diseases and Related Health Problems](https://www.cid10.com.br/)):**
    
       NO_CID: Number of the ICD register
       CO_CID: Code of the related desease
@@ -146,7 +147,7 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
       NU_LONGITUDE_MUN_EST:
       NO_REGIAO_SAUDE_EST:
 
-The dataset was provided in partnership between the [Ministry of Health](http://www.saude.gov.br/) and the [Medicine Faculty Foundation](http://www.ffm.br/) in terms of the [agreement 857860](https://drive.google.com/file/d/1s-n-j_TMU8lIXExPGMlR85X6WLIkOAtf/view?usp=sharing) published in the Official Diary of the Union.
+The dataset was provided in partnership between the [Ministry of Health](http://www.saude.gov.br/) and the [Medicine Faculty Foundation](http://www.ffm.br/) in terms of the [agreement 857860](https://drive.google.com/file/d/1s-n-j_TMU8lIXExPGMlR85X6WLIkOAtf/view?usp=sharing) published in the Official Diary of the Union. The dataset is not yet publicly available, but is accessible in a hosted [GreenPlum](https://greenplum.org/) database.
 
 ### Solution Statement
 <!-- _(approx. 1 paragraph)_
