@@ -184,8 +184,6 @@ In this final section, summarize a theoretical workflow for approaching a soluti
   * Perform individual benchmarks for each model.
   * Perform Comparative analysis between models.
 
-### Prospects
-
 
 ## References
 
