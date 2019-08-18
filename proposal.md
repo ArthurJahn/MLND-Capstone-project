@@ -35,19 +35,19 @@ The smaller dataset has 4000 registers of transactions that were classified as f
 
    **Transaction specific attributes:**
    
-      CO_SEQ_DISPENSACAO: Sequencial code for the requested transaction related to the pharmacy
-      BL_FRAUD_TRANSACTION: Boolean indication if the transaction was fraudulent or not
+      CO_SEQ_DISPENSACAO: Sequencial code for the transaction 
+      BL_FRAUD_TRANSACTION: Flags if the transaction is fraudulent or not
 
 
 The larger dataset provided has aprox. 200.000.000 registers of transactions executed from 2013 to 2019 with 72 attributes of more than 2000 pharmacies registered in the program. The data has been anonimized in orther to remove sensible information. The provided dataset contains the following list of attributes that we can analyse:
  
    **Transaction specific attributes:**
    
-      DT_DISPENSACAO: Date of the requested transaction in the format "DD/MM/YYYY - HH:MM:SS"
-      CO_SEQ_DISPENSACAO: Sequencial code for the requested transaction related to the pharmacy
+      DT_DISPENSACAO: Date of the requested transaction "DD/MM/YYYY - HH:MM:SS"
+      CO_SEQ_DISPENSACAO: Sequencial code for the transaction
       QT_DISPENSACAO: Quantity of medicine sold by the transaction
       VL_UNITARIO: Unitary value of the medicine sold
-      VL_REFERENCIA_POPFARMA: Unitary value that goverment pays back for that medicine
+      VL_REFERENCIA_POPFARMA: Unitary value that goverment pays for that medicine
 
    **Stablishment attributes:**
    
@@ -91,7 +91,7 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
 
    **Pacient's goverment program participation:**
    
-      ST_PARTICIPA_POPFARMA_PAC: Indication if the pacient benefits from Popular Pharmacy program
+      ST_PARTICIPA_POPFARMA_PAC: Flags if the pacient benefits from Popular Pharmacy
 
    **Medicine attributes:**
    
@@ -106,7 +106,7 @@ The larger dataset provided has aprox. 200.000.000 registers of transactions exe
    **Producer attributes:**
    
       NO_FABRICANTE: Number of identification of the producer
-      NU_REGISTRO_ANVISA: Number of the producer National Sanitary Surveillance Agency register
+      NU_REGISTRO_ANVISA: Producer number in National Sanitary Surveillance Agency
 
    **Stock control and price attributes:**
    
