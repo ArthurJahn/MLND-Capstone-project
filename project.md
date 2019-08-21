@@ -6,12 +6,23 @@ August 17, 2019
 <!-- nine to fifteen pages -->
 
 ## Project Definition
-Overview <!-- Student provides a high-level overview of the project in layman’s terms. Background information such as the 
+
+The logistics related to the distribution of supplies is a chalanging problem faced by any organization, when it comes to medicine, this chalange also brings the cost of people's lives. Designing a governmental service that could distribute medicine to an entire nation as large as Brazil is a complex task.
+
+The Popular Pharmacy Program tryies to solve this problem by refunding registered pharmacies and drugstores their costs with a [list of medicines subsidized by the government](http://portalarquivos2.saude.gov.br/images/pdf/2018/janeiro/16/Lista-medicamentos-geral.pdf) to provide faster distribution by delegating such logistic to the drugstores' network, that is, the drugstore buys, distributes and sells the medicine and then the government pays it back to the pharmacy. This facility comes with a cost: the number of frauds has increased in the last years due to the small number of public servers supervising the process of refund and the large number of registered pharmacies.
+
+The process designed by the Popular Pharmacy Program happens in the following steps: The pharmacy sells a medicine to someone; the seller provides important data to the drugstore, such as age, desease, prescription, and the ID number; The registered pharmacy submits the list of documents and follows some requirements to request a refund for the medicine; the Health Ministry verifies the provided data and if everything is ok, refunds the value provided in the invoice submitted with the request.
+
+The frauds in the Popular Pharmacy Program happen in ways such as: providing fake pacient information; Registering multiple medicines for a pacient that has only requested a single medicine; Selling medicine to dead people and so on. They are all related to user's information that are in someway corrupted or missused to deceive the control process. There is a large set of information that could help in the identification of fraudulent transactions, such as the client location, the average age range of affected people, and many other indirect information that we can collect to provide as features to our algorithm.
+
+<!-- Student provides a high-level overview of the project in layman’s terms. Background information such as the 
 problem domain, the project origin, and related data sets or input data is given. -->
 
 ### Problem Statement
 <!-- The problem which needs to be solved is clearly defined. A strategy for solving the problem, including discussion 
 of the expected solution, has been made. -->
+
+To simplify the problem to a reasonable and executable task, we have a set of transactions requested by each drugstore and we want to find the ones with higher chances of being fraudulent transactions. This is similar to a [credit card fraud verification](https://towardsdatascience.com/detecting-credit-card-fraud-using-machine-learning-a3d83423d3b8), that we can use as inspiration. The problem here also comes with a degree of business inteligence need, so the solution provided might be comprehensive.
 
 ### Metrics
 <!-- Metrics used to measure performance of a model or result are clearly defined. Metrics are justified based on the 
