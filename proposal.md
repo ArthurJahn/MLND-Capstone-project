@@ -194,6 +194,8 @@ In this final section, summarize a theoretical workflow for approaching a soluti
 
 3 - FREI, LUKAS. Detecting Credit Card Fraud Using Machine Learning, 2019. Available in https://towardsdatascience.com/detecting-credit-card-fraud-using-machine-learning-a3d83423d3b8
 
+4 - DING, CHRIS; HE, XIAOFENG. K-means Clustering via Principal Component Analysis. Available in http://ranger.uta.edu/~chqding/papers/KmeansPCA1.pdf
+
 -----------
 
 <!-- **Before submitting your proposal, ask yourself. . .**
